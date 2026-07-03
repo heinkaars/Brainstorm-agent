@@ -19,6 +19,16 @@ export interface EvaluatedIdea extends IdeaInput {
   };
 }
 
+export type IdeaField = "idea" | "pain" | "risk" | "segment";
+
+export interface RefineSuggestion {
+  idea: string;
+  pain: string;
+  risk: string;
+  segment: string;
+  changes: string[];
+}
+
 export function createEmptyIdea(): IdeaInput {
   return {
     id: crypto.randomUUID(),
@@ -28,3 +38,10 @@ export function createEmptyIdea(): IdeaInput {
     segment: "",
   };
 }
+
+export const FIELD_LABELS: Record<IdeaField, string> = {
+  idea: "Idea",
+  pain: "Pain",
+  risk: "Biggest Risk",
+  segment: "Segment",
+};

@@ -106,9 +106,9 @@ export default function Home() {
                 Input Dashboard
               </h2>
               <p className="mt-2 max-w-xl text-sm leading-relaxed text-zinc-400">
-                Log your brainstorming ideas below. Be specific about the pain,
-                risks, and target segment — the evaluator uses these signals to
-                rank and pressure-test each idea.
+                Log your brainstorming ideas below. Fill all four fields, then
+                hit <span className="text-accent-cyan">Refine with AI</span> for
+                a provocative coach pass before submitting to the evaluator.
               </p>
             </div>
             {error && (
